@@ -9,9 +9,9 @@ installGlobals({ nativeFetch: true });
 var plugins = [
   remix({
     ignoredRouteFiles: ["**/.*", "**/*.test.{ts,tsx}"],
-    routes: async (defineRoutes) => {
-      return flatRoutes("routes", defineRoutes);
-    },
+    // routes: async (defineRoutes) => {
+    //   return flatRoutes("routes", defineRoutes);
+    // },
     future: {
       v3_fetcherPersist: true,
       v3_relativeSplatPath: true,
